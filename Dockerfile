@@ -5,7 +5,6 @@ RUN addgroup -S app && adduser -S -g app app
 COPY package.json /src/
 RUN chown -R app:app /src/
 
-
 USER app
 WORKDIR /src
 RUN npm install
